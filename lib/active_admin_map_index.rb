@@ -1,5 +1,17 @@
+require "activeadmin"
 require "active_admin_map_index/version"
+require "active_admin_map_index/configuration"
+require "active_admin_map_index/engine"
+require "active_admin_map_index/index_as_map"
 
 module ActiveAdminMapIndex
-  # Your code goes here...
+  class << self
+    def configure
+      yield config
+    end
+
+    def config
+      @config ||= ActiveAdminMapIndex::Configuration.new
+    end
+  end
 end
