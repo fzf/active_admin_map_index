@@ -31,6 +31,17 @@ Add the following to your `app/assets/stylesheets/application.scss`:
 @import "active_admin_map_index"
 ```
 
+### Installation (Initializer)
+
+Add the following to your `config/initializers/active_admin_map_index.rb`
+
+```
+ActiveAdminMapIndex.configure do |config|
+  config.google_key = 'you_api_key'
+end
+```
+
+Follow these [instructions](https://developers.google.com/maps/documentation/javascript/get-api-key) if you do not have an api key.
 
 ## Usage
 
