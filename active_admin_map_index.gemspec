@@ -10,8 +10,9 @@ Gem::Specification.new do |spec|
   spec.email         = ["fletch@fzf.me"]
 
   spec.summary       = "Active Admin map view index"
-  spec.description   = "Active Admin map view index"
   spec.license       = "MIT"
+  spec.homepage      = "https://github.com/fzf/active_admin_map_index"
+  spec.
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
